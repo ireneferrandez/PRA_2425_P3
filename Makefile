@@ -14,6 +14,7 @@ bin/testBSTreeDict: testBSTreeDict.cpp BSTreeDict.h Dict.h BSNode.h TableEntry.h
 		mkdir -p bin
 			g++ -o bin/testBSTreeDict testBSTreeDict.cpp
 
-
 clean:
 		rm -rf *.o *.gch bin
+
+all: bin/testTableEntry bin/testHashTable bin/testBSTree bin/testBSTreeDict
